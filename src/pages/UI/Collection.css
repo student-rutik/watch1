@@ -1,0 +1,41 @@
+.my-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin:2rem 2rem;
+  }
+  
+  .my-col-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    font-size: 1.4rem;
+    width: 350px;
+  }
+  /* .my-col-con {
+  } */
+  .my-col-img {
+    width: 100%;
+  }
+   .btn {
+    background-color: #3498db; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Space inside button */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .btn:hover {
+    background-color:yellow; /* Darker blue on hover */
+    color: black;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  

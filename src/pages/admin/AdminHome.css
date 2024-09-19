@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+.all-shoe-container {
+  margin: 2rem;
+}
+.shoe-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add-new-shoe {
+  font-size: 1.3rem;
+}
+.no-shoe-found {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  color: gray;
+}
+.shoe-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 2rem;
+}
+.shoe-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  font-size: 1.4rem;
+  width: 350px;
+}
+.shoe-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  margin: 1rem auto;
+}
+@media (max-width: 400px) {
+  .add-new-shoe {
+    display: none;
+  }
+  
+}

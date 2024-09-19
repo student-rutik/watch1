@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+  .delete-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 20px;
+  }
+  .delete-button {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    text-align: center;
+    width: 100%;
+  }
+  
+  @media (max-width: 542px) {
+    .delete-container {
+      max-width: 280px;
+    }
+    .delete-container > h2 {
+      text-align: center;
+    }
+    .delete-button {
+      font-size: 1rem;
+    }
+  }

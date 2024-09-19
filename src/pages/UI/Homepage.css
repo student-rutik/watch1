@@ -1,0 +1,503 @@
+.shop-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #000; /* Default background color */
+    color: white; /* Default text color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .shop-button:hover {
+    background-color: transparent; /* Background color on hover */
+    color: white; /* Text color on hover */
+    border: 2px solid #000; /* Border on hover */
+  }
+  
+
+  /* card two */
+  .card-container {
+    padding: 70px;
+    display: flex;
+    justify-content: space-between; /* Cards ke beech mein space dene ke liye */
+    gap: 10px; /* Cards ke beech thoda gap */
+  }
+  
+  .card-container2{
+    padding: 130px;
+  }
+  
+
+
+  
+  .card {
+    flex: 1; /* Cards ko equal width dene ke liye */
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .card img:hover {
+    transform: scale(1.03); /* Image ko aage laane ke liye thoda zoom karte hain */
+    transition: transform 0.3s ease-in-out; /* Smooth transition effect ke liye */
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column; /* Chhoti screen par cards ko ek ke neeche ek dikhane ke liye */
+      padding: 20px;
+    }
+  }
+  
+  /* slick slider */
+  .slider-container {
+    margin: 20px auto;
+    width: 90%;
+  }
+  
+  .slider-container .slick-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .slick-list {
+    overflow: hidden;
+  }
+  
+  .slick-track {
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider-container .slider-item {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .slider-container .slider-item img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-container .slider-text {
+    margin-top: 10px;
+  }
+  
+  .slider-container .slider-text h5 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .slider-container .slider-text p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+
+
+
+
+  .single {
+    margin-bottom: 30px!important ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .img {
+    position: relative;
+    width: 410px; /* Fixed width */
+    height: 410px; /* Fixed height */
+    margin-bottom: 20px;
+  }
+  
+  .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Ensure image covers the area without stretching */
+  }
+  
+  .img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease;
+    border-radius: 8px; /* Match the border radius of the image */
+  }
+  
+  .img:hover .overlay {
+    opacity: 1; /* Show on hover */
+  }
+  
+  .info {
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  .info h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .info h2:nth-of-type(2) {
+    color: #333;
+    font-size: 1.25rem;
+    margin: 10px 0;
+  }
+  
+  .info p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: #3498db; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Space inside button */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Make text bold */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: yellow; /* Darker blue on hover */
+    color: black;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .single {
+      flex-direction: column;
+    }
+  
+    .info h2 {
+      font-size: 1.25rem;
+    }
+  
+    .info h2:nth-of-type(2) {
+      font-size: 1rem;
+    }
+  
+    .info p {
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .info h2 {
+      font-size: 1rem;
+    }
+  
+    .info h2:nth-of-type(2) {
+      font-size: 0.875rem;
+    }
+  
+    .info p {
+      font-size: 0.75rem;
+    }
+  }
+  
+  .half {
+    border: none;
+    border-top: 1px solid #333; /* Color and thickness of the line */
+    width: 70%; /* Adjust this to set the length of the line */
+    margin: 0 auto; /* Center the line horizontally */
+    position: relative;
+    text-align: center;
+  }
+  
+  .half::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    border-top: 2px solid #333; /* Match the line color */
+    transform: translateX(-50%); /* Center the line */
+  }
+  
+
+  .news {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px;
+    gap: 20px; /* Space between columns */
+    text-align: center; /* Center text inside the flex items */
+  }
+  
+  .news1, .news2 {
+    flex: 1;
+    max-width: 500px; /* Optional: limit the width of the columns */
+  }
+  
+  .news1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally in the column */
+  }
+  
+  .news2 {
+    display: flex;
+    flex-direction: row; /* Align input and button side by side */
+    align-items: center; /* Center items vertically */
+    gap: 0; /* No space between input and button */
+  }
+  
+  .news2 input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+    width: auto; /* Adjust width as needed */
+    flex: 1; /* Allow input to grow and fill space */
+  }
+  
+  .news2 button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .news2 button:hover {
+    background-color:yellow;
+    color: black;
+  }
+  
+  @media (max-width: 768px) {
+    .news {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .news1, .news2 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .news2 {
+      margin-top: 20px;
+    }
+  }
+  
+
+
+/* footer */
+.footer {
+  background-color:#2f2f2f; /* Your intended background color */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  padding: 20px; /* Equal spacing inside each footer section */
+  box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+}
+
+.footer-section p,
+.footer-section ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Ensure the container is centered and takes full width */
+.down {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 20px; /* Add space between items */
+  padding: 20px; /* Optional: add padding around the container */
+}
+
+/* Style each download section */
+.download-play, .download-app {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+  gap: 10px; /* Space between icon and text */
+  max-width: 170px; /* Optional: limit the width of each section */
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+/* Style icons */
+.download-play i, .download-app i {
+  font-size: 2rem; /* Adjust icon size */
+}
+
+/* Style text */
+.download-play p, .download-app p {
+  font-size: 1rem; /* Adjust text size */
+  margin: 0; /* Remove default margin */
+}
+
+
+
+
+.last{
+  width:"100%";
+   box-sizing:"border-box"
+}
+
+@media (max-width: 768px){
+  .last{
+    display: none;
+  }
+}
+
+
+
+
+
+.foo {
+  background-color: #2f2f2f;
+  text-align: center; /* Center the content within the .foo container */
+  padding: 50px; /* Add padding if needed */
+}
+
+.foo1 {
+  margin-top: 20px; /* Reduce space between .foo1 and .foo2 */
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items with equal space around them */
+  align-items: center; /* Align items vertically centered */
+}
+
+.foo2 {
+  flex: 1; /* Make .foo2 take up available space */
+  margin-right: 400px; /* Large margin for larger screens */
+}
+
+.foo3 {
+  display: flex; /* Use Flexbox */
+  gap: 5px; /* Space between buttons */
+}
+
+/* Responsive adjustments for tablets and small desktops */
+@media (max-width: 1024px) {
+  .foo {
+    padding: 30px; /* Adjust padding for medium screens */
+  }
+  
+  .foo2 {
+    margin-right: 200px; /* Reduce margin for medium screens */
+  }
+
+  .foo3 {
+    gap: 10px; /* Slightly larger gap on medium screens */
+  }
+}
+
+/* Responsive adjustments for small screens (mobile) */
+@media (max-width: 768px) {
+  .foo {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  
+  .foo1 {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 10px; /* Space between stacked items */
+  }
+
+  .foo2 {
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+
+  .foo3 {
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+    justify-content: center; /* Center the buttons within the container */
+  }
+}
+
+/* Responsive adjustments for very small screens (extra mobile) */
+@media (max-width: 480px) {
+  .foo {
+    padding: 15px; /* Adjust padding for very small screens */
+  }
+  
+  .foo3 {
+    gap: 8px; /* Adjust spacing between buttons */
+  }
+}
+
+
+
+
+
+ul li a {
+  color: white;
+  text-decoration: none; /* To remove the underline from the links */
+}
+
+ul li a:hover {
+  color: #ccc; /* You can also add a hover effect if you like */
+}
+
+.address{
+  color: white;
+  text-decoration: none; /* To remove the underline from the links */
+}
+.address:hover{
+  color: #ccc;
+}
